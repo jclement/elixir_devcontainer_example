@@ -5,6 +5,9 @@
 	// Command to run after dev container *created*.  Initializes the database, etc.
 	"postCreateCommand": ". .devcontainer/post_create.sh",
 
+	// Command to run after dev container *started*.
+	"postStartCommand": "sudo service postgresql start",
+
 	// Forward:
 	// 4000: HTTP server
 	// 5432: Postgres, so we can get at it with UI tools
